@@ -1,4 +1,7 @@
-First pass at a GPDB AWS cloud formation script
+GPDB AWS cloud formation script
+
+* 2015-11-18
+ - Update to underlying AMI for GPDB 4.3.6.2
 
 The script relies on an AMI with:
 * a script to format and create a /data partition of the drive
@@ -7,7 +10,7 @@ The script relies on an AMI with:
 
 Issues
 * IP conflicts if something in the node cluster is allocated a master ip, cluster deploy will rollback
-  
+* Hostnames for nodes not set
 
 Todo
 * Variable for GPDB version which is pulled from download location
